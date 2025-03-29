@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    opacity: 0;
+    animation: fadeInBody 1s ease-in forwards;
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header and Navigation */
+header {
+    background: #222;
+    padding: 20px;
+    animation: slideInFromTop 1s ease-in-out;
+}
+
+@keyframes slideInFromTop {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide-in Effect */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #222;
+}
