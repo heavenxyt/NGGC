@@ -84,7 +84,7 @@ h3 {
     background: #5865f2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 20px) {
     .team {
         flex-direction: column;
         align-items: center;
