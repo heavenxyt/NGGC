@@ -98,3 +98,12 @@ footer {
     text-align: center;
     padding: 20px;
     }
+.royal-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(45deg, #ffcc00, #ffd700, #ffec80, #b8860b);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
