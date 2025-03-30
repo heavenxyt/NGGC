@@ -14,12 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
     fadeElements.forEach(el => observer.observe(el));
     slideElements.forEach(el => observer.observe(el));
 
-    // Smooth scrolling
-    document.querySelectorAll("nav a").forEach(link => {
-        link.addEventListener("click", e => {
-            e.preventDefault();
-            const targetId = e.target.getAttribute("href").substring(1);
-            document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
-        });
-    });
+    
 });
