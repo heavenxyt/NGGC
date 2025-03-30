@@ -1,18 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const fadeElements = document.querySelectorAll(".fade-in");
-    const slideElements = document.querySelectorAll(".slide-in");
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Website Loaded Successfully!");
 
-    // Intersection Observer to trigger animations on scroll
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
+    // Ensure navigation links work properly
+    document.querySelectorAll("nav a").forEach(link => {
+        link.addEventListener("click", function () {
+            console.log("Navigating to:", this.getAttribute("href"));
         });
-    }, { threshold: 0.2 });
+    });
 
-    fadeElements.forEach(el => observer.observe(el));
-    slideElements.forEach(el => observer.observe(el));
+    // Example: Toggle mobile menu (if you have a hamburger menu)
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
 
-    
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+        });
+    }
 });
