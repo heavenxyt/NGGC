@@ -117,3 +117,19 @@ footer {
     transform: translate(-50%, -50%);
     z-index: -1; /* Puts video behind all content */
 }
+@keyframes glitch {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glitch-text {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff0000, #ffd700, #7d0000);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitch 2s infinite alternate;
+}
