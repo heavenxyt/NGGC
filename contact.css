@@ -1,1 +1,137 @@
+/* 🌟 Global Theme Settings */
+body {
+    background-color: #ee2121;  
+    color: #ffccf7;  
+    font-family: 'Poppins', sans-serif;
+    
+  text-shadow: 3px 3px 4px #000000;
+   
+}
+/* 🌟 Header Styling */
+header {
+    background: linear-gradient(90deg, #7d0000, #121212, #7d0000); /* Red to Black Gradient */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5); /* Gold Glow */
+}
 
+/* 🌟 Navigation Menu */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffd700; /* Royal Gold */
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background: rgba(255, 215, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* 🌟 Royal Gold Neon Effect */
+@keyframes gold-glow {
+    0% { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700; }
+    50% { text-shadow: 0 0 10px #ffd700, 0 0 20px #ff0000; }
+    100% { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700; }
+}
+
+.royal-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffd700;
+    animation: gold-glow 1.5s infinite alternate;
+    text-align: center;
+}
+
+/* 🌟 Buttons */
+.button {
+    background: #7d0000; /* Deep Red */
+    color: #ffd700; /* Royal Gold */
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #121212;
+    color: #fff;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
+}
+
+/* 🌟 Game Cards */
+.game-card {
+    background: #222; /* Dark Gray Background */
+    border: 2px solid #ffd700; /* Gold Borders */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    background: #7d0000;
+    transform: scale(1.05);
+}
+
+/* 🌟 Footer */
+footer {
+    background: linear-gradient(90deg, #7d0000, #121212, #7d0000);
+    color: #ffd700;
+    text-align: center;
+    padding: 20px;
+    }
+.royal-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(45deg, #ffcc00, #ffd700, #ffec80, #b8860b);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures video fills the screen */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Puts video behind all content */
+}
+@keyframes glitch {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glitch-text {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff0000, #ffd700, #7d0000);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitch 2s infinite alternate;
+}
