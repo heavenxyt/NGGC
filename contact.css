@@ -1,16 +1,8 @@
 /* 🌟 Global Theme Settings */
 body {
-    background-color: #121212;  /* Deep Black Background */
-    color: #808080;  /* Royal Gold Text */
+    background-color: #121212;  
+    color: #808080;  
     font-family: 'Poppins', sans-serif;
-}
-
-/* 🌟 Header Styling */
-header {
-    background: linear-gradient(90deg, #7d0000, #121212, #7d0000); /* Red to Black Gradient */
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5); /* Gold Glow */
 }
 
 /* 🌟 Navigation Menu */
@@ -41,22 +33,9 @@ nav ul li a:hover {
     box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
 }
 
-/* 🌟 Royal Gold Neon Effect */
-@keyframes gold-glow {
-    0% { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700; }
-    50% { text-shadow: 0 0 10px #ffd700, 0 0 20px #ff0000; }
-    100% { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700; }
-}
 
-.royal-title {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffd700;
-    animation: gold-glow 1.5s infinite alternate;
-    text-align: center;
-}
 
+]
 /* 🌟 Buttons */
 .button {
     background: #7d0000; /* Deep Red */
@@ -91,22 +70,7 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* 🌟 Footer */
-footer {
-    background: linear-gradient(90deg, #7d0000, #121212, #7d0000);
-    color: #ffd700;
-    text-align: center;
-    padding: 20px;
-    }
-.royal-text {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: transparent;
-    background: linear-gradient(45deg, #ffcc00, #ffd700, #ffec80, #b8860b);
-    background-clip: text;
-    -webkit-background-clip: text;
-}
+
 #bg-video {
     position: fixed;
     top: 50%;
